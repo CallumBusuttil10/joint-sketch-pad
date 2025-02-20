@@ -8,6 +8,55 @@ body {
     font-family: Abel, Helvetica, sans-serif;
 }
 
+/* Home Button Styles */
+.home-btn {
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 20px; /* 20px from the top */
+    right: 20px; /* 20px from the right */
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 10; /* Ensure it stays on top */
+    transition: transform 0.3s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.home-btn .icon {
+    color: #262626;
+    transition: .5s;
+}
+
+.home-btn:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+/* Background hover effect for home button */
+.home-btn:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00; /* Red background on hover */
+    transition: .5s;
+    z-index: 2;
+}
+
+.home-btn:hover:before {
+    top: 0;
+}
+
 .home {
     background: #222;
     width: 100%;
@@ -109,7 +158,7 @@ ul li:nth-child(3) a:before {
 }
 
 ul li:nth-child(4) a:before {
-    background: #f2da1f; /* JS Docs - Yellow */
+    background: #dfc715;
 }
 
 /* Description text under icons */
