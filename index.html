@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Basic HTML Skeleton</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home-page.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 id="headline">Hello</h1>
+<body style="background-color: 444444FF">
 
-    <h3>
-        <a href="search.html" target="_blank">Search Page</a>
-    </h3>
-    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+<div class="home">
+    <p>Home Page</p>
+    <p class="subtitle">A joint sketch-pad project</p>
+</div>
+
+<div class="menu-trigger">
+    <div class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <p>MENU</p>
+
+    <div class="menu">
+        <ul>
+            <li><a href="search/search.html"><p>Music Search</p></li>
+            <li><a href="useful-links/useful-links.html" target="_self"><p>Useful Links</p></li>
+            <li><a href="search/search.html"><p>Weather API</p></li>
+            <li><a href="search/search.html"><p>Google Maps API</p></li>
+            <li><a href="search/search.html"><p>Socials</p></li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
